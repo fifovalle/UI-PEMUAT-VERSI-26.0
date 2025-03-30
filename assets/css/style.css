@@ -1,3 +1,9 @@
+:root {
+    --ukuran: 50px;
+    --kecepatan: 1.2s;
+    --warna: #474554;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,15 +19,12 @@ body {
 }
 
 .bandul-newton {
-    --uib-size: 50px;
-    --uib-speed: 1.2s;
-    --uib-color: #474554;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: var(--uib-size);
-    height: var(--uib-size);
+    width: var(--ukuran);
+    height: var(--ukuran);
 }
 
 .dot-bandul__newton {
@@ -39,15 +42,15 @@ body {
     width: 100%;
     height: 25%;
     border-radius: 50%;
-    background-color: var(--uib-color);
+    background-color: var(--warna);
 }
 
 .dot-bandul__newton:first-child {
-    animation: melayang var(--uib-speed) linear infinite;
+    animation: melayang var(--kecepatan) linear infinite;
 }
 
 .dot-bandul__newton:last-child {
-    animation: melayang2 var(--uib-speed) linear infinite;
+    animation: melayang2 var(--kecepatan) linear infinite;
 }
 
 @keyframes melayang {
